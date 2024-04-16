@@ -1,0 +1,12 @@
+.toast {
+  position: fixed;
+  top: 12px;
+  left: 24px;
+  width: calc(100% - 48px);
+  z-index: 999;
+  display: block !important;
+  padding: 0.75rem;
+  background-color: #ffbc1a;
+  font-size: 1rem;
+  font-weight: 500;
+}

@@ -1,9 +1,9 @@
 .balance {
   background-image: url(/assets/imgs/detail-bg.jpg);
   background-size: 100vw auto;
-  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: scroll;
   padding: 1.5rem;
 
   &-status {
@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 51.25rem;
+    // height: 51.25rem;
     width: 100%;
   }
 
@@ -24,7 +24,7 @@
   }
 
   &-mine {
-    margin-bottom: 11.25rem !important;
+    // margin-bottom: 11.25rem !important;
     p {
       margin-bottom: 0 !important;
     }
@@ -38,30 +38,31 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 20% 0;
 
     .title {
-      font-size:1.125rem;
+      font-size: 1.125rem;
       font-weight: 600;
-      margin-bottom:0.5rem;
+      margin-bottom: 0.5rem;
       color: #818387;
     }
 
     .num {
       display: flex;
       align-items: center;
-      font-size:2.625rem;
+      font-size: 2.625rem;
       font-weight: 700;
       font-family: 'Kanit';
-      line-height:2.688rem;
-      letter-spacing:0.063rem;
+      line-height: 2.688rem;
+      letter-spacing: 0.063rem;
 
       img {
-        width:2.25rem;
-        margin-right:0.5rem;
+        width: 2.25rem;
+        margin-right: 0.5rem;
       }
 
       &-small {
-        font-size:1.125rem;
+        font-size: 1.125rem;
         font-weight: 500;
 
         img {
@@ -72,7 +73,7 @@
 
     small {
       font-size: 1rem;
-      margin-right:0.5rem;
+      margin-right: 0.5rem;
       color: #818387;
     }
   }
@@ -87,9 +88,9 @@
       justify-content: center;
       background: linear-gradient(to right, #0CA9DA, #0B9AC7, #09789B) border-box;
       color: #fff;
-      font-size:0.875rem;
+      font-size: 0.875rem;
       font-weight: 600;
-      padding:0.5rem;
+      padding: 0.5rem;
     }
 
     .progress {
@@ -100,8 +101,8 @@
       padding: 1rem;
 
       img {
-        width:2.5rem;
-        margin-right:0.5rem;
+        width: 2.5rem;
+        margin-right: 0.5rem;
       }
 
       p {
@@ -111,7 +112,7 @@
       }
 
       span {
-        font-size:0.75rem;
+        font-size: 0.75rem;
         font-weight: 500;
         color: #727272;
       }
@@ -126,20 +127,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    bottom: 1.5rem;
     padding: 1rem;
+    width: calc(100% - 48px);
     &-item {
       width: 3.625rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-size:0.75rem;
+      font-size: 0.75rem;
       font-weight: 500;
       color: #2C2C2C;
       text-decoration: none;
       img {
-        width:2.188rem;
-        margin-bottom:0.25rem;
+        width: 2.188rem;
+        margin-bottom: 0.25rem;
       }
     }
   }

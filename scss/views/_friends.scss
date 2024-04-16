@@ -1,5 +1,5 @@
 .friends {
-  padding:2.5rem 1.5rem 1.5rem;
+  padding: 2.5rem 1.5rem 1.5rem;
 
   &-title {
     display: flex;
@@ -17,7 +17,7 @@
       font-size: 1.5rem;
       font-weight: 600;
       font-family: 'Kanit';
-      margin-bottom:0.5rem;
+      margin-bottom: 0.5rem;
       color: #2c2c2c;
     }
 
@@ -28,17 +28,17 @@
       color: #2c2c2c;
       display: flex;
       align-items: center;
-      margin-bottom:0.5rem;
+      margin-bottom: 0.5rem;
 
       img {
         width: 1.375rem !important;
-        margin-right:0.5rem;
+        margin-right: 0.5rem;
         margin-bottom: 0;
       }
     }
 
     p {
-      font-size:0.875rem;
+      font-size: 0.875rem;
       font-weight: 500;
       color: #727272;
       text-align: center;
@@ -47,14 +47,14 @@
     a {
       color: #0CA9DA;
       font-weight: 600;
-      font-size:0.875rem;
+      font-size: 0.875rem;
       text-decoration: none;
       margin-top: 1rem;
     }
   }
 
   &-list {
-    margin-top:0.75rem;
+    margin-top: 0.75rem;
     margin-bottom: 74px;
     display: flex;
     flex-direction: column;
@@ -71,8 +71,12 @@
       color: #2c2c2c;
     }
 
+    p {
+      font-size: 0.875rem !important;
+    }
+
     img {
-      border-radius:0.5rem;
+      border-radius: 0.5rem;
     }
 
     span {
@@ -92,8 +96,8 @@
       text-decoration: underline;
 
       img {
-        width:1.75rem;
-        margin-bottom:0.25rem;
+        width: 1.75rem;
+        margin-bottom: 0.25rem;
       }
     }
   }

@@ -11,6 +11,11 @@
 </head>
 
 <body class="home">
+
+  <span class="toast">
+    Deposit feature is coming soon
+  </span>
+
   <div class="home-header">
     <div class="home-header-fixed-width">
       <img class="logo" src="assets/logo-no-bg.png" alt="">
@@ -70,13 +75,45 @@
       <button class="btn btn-flat btn-yellow">Claim</button>
     </div>
 
+    <div class="home-status">
+      <div class="row">
+        <div class="col">
+          <div class="home-status-block home-status-left">
+            <div class="title">
+              <p>DMH Balance</p>
+              <p>0.010000</p>
+            </div>
+            <img src="/assets/imgs/balance-diamond.png" alt="">
+          </div>
+        </div>
+        <div class="col">
+          <div class="home-status-block home-status-right">
+            <p>Storage</p>
+            <div class="home-status-progress">
+              <div class="progress progress-vertical">
+                <span class="progress-indicator"></span>
+                <span class="progress-gauge"></span>
+              </div>
+              <div class="home-status-index">
+                <h2>Mining</h2>
+                <div>
+                  <p>Collected</p>
+                  <span>0.009847</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="tab">
       <div class="tab-nav">
         <button class="tab-nav-item active" id="tab-1">Tokens</button>
         <button class="tab-nav-item" id="tab-2">NFTs</button>
       </div>
-      <div class="tab-content card card-space-0">
-        <div id="tab-1-content" class="tab-content-item active">
+      <div class="tab-content">
+        <div id="tab-1-content" class="card card-space-0 tab-content-item active">
           <div class="list">
             <a href="" class="list-item">
               <div class="content-group">

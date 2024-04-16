@@ -2,12 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:0.313rem0.75rem;
-  border-radius:2.5rem;
+  padding: 0.313rem 0.75rem;
+  border-radius: 2.5rem;
 
   &-lv1 {
     background-color: #0CA9DA;
-    border:0.125rem solid #5CC5E6;
+    border: 0.125rem solid #5CC5E6;
   }
   &-lv2 {
     // ...
@@ -16,11 +16,11 @@
   p {
     color: #fff;
     font-weight: 600;
-    font-size:0.75rem;
+    font-size: 0.75rem;
   }
 
   img {
-    width:1.125rem;
-    margin-right:0.25rem;
+    width: 1.125rem;
+    margin-right: 0.25rem;
   }
 }

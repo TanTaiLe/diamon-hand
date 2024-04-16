@@ -1,5 +1,5 @@
 .progress {
-  height:0.75rem;
+  height: 0.75rem;
   width: 100%;
   background-color: #D6D9DF;
   position: relative;
@@ -18,11 +18,29 @@
     top: 0;
     left: 40%;
     height: 100%;
-    width:0.25rem;
+    width: 0.25rem;
     background-color: #BEBEBE;
   }
 
   &-vertical {
-
+    width: 30px;
+    height: 100px;
+    .progress {
+      &-gauge {
+        // height: 100%;
+        height: 30%;
+        width: 100%;
+        background: linear-gradient(to top, #0CA9DA, #0B9AC7, #09789B) border-box;
+        top: unset;
+        bottom: 0;
+      }
+      &-indicator {
+        width: 100%;
+        height: 0.25rem;
+        bottom: 40%;
+        left: unset;
+        top: unset;
+      }
+    }
   }
 }

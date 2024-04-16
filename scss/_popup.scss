@@ -1,10 +1,10 @@
 .popup {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 100vh;
+  height: 100%;
   background: rgba(#000, 50%);
   z-index: 999;
   display: flex;
@@ -14,9 +14,9 @@
   &-indicator {
     background-color: #B4E4F4;
     position: absolute;
-    width:2.5rem;
-    height:0.25rem;
-    border-radius:0.125rem;
+    width: 2.5rem;
+    height: 0.25rem;
+    border-radius: 0.125rem;
     top: -12px;
     left: 0;
     right: 0;
@@ -28,7 +28,7 @@
     background-color: #E7F6FB;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    padding:2.25rem 1.5rem2.25rem;
+    padding: 2.25rem 1.5rem 2.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,12 +49,12 @@
     h1 {
       font-family: 'Kanit';
       font-weight: 600;
-      font-size:2.25rem;
+      font-size: 2.25rem;
       color: #2c2c2c;
     }
 
     p {
-      font-size:0.875rem;
+      font-size: 0.875rem;
       font-weight: 500;
       color: #727272;
     }
