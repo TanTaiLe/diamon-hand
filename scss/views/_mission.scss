@@ -1,0 +1,54 @@
+.missions {
+  .card {
+    margin-bottom: 1.5rem;
+  }
+
+  .tab-nav {
+    margin-bottom: 1.5rem;
+
+    &-item {
+      width: 100%;
+
+      .highlight {
+        font-weight: 700;
+        color: #0CA9DA;
+      }
+    }
+  }
+
+  &-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    img {
+      width: 80px;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      font-family: 'Kanit';
+      margin-bottom:0.5rem;
+      color: #2c2c2c;
+    }
+
+    p {
+      font-size:0.875rem;
+      font-weight: 500;
+      color: #727272;
+      text-align: center;
+    }
+
+    a {
+      color: #0CA9DA;
+      font-weight: 600;
+      font-size:0.875rem;
+      text-decoration: none;
+      margin-top: 1rem;
+    }
+  }
+}

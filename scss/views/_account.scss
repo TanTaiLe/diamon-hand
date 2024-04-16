@@ -1,0 +1,111 @@
+.account {
+  padding: 1.5rem;
+  background-color: #EBEEF5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  &-link {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #2c2c2c;
+    display: inline-block;
+  }
+  &-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 167px;
+      margin-bottom: 1.5rem;
+    }
+    * {
+      text-align: center;
+    }
+    h1 {
+      font-family: 'Kanit';
+      font-size:2.5rem;
+      font-weight: 700;
+    }
+    p {
+      font-size:0.938rem;
+      font-weight: 600;
+    }
+  }
+  &-list {
+    background: transparent;
+  }
+  &-item {
+    padding:0.75rem;
+    border-radius:0.5rem;
+    border:0.125rem solid #2c2c2c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      color: #2c2c2c !important;
+      font-size:0.938rem;
+      font-weight: 600;
+    }
+    .check img {
+      width:1.875rem;
+    }
+  }
+}
+.form {
+  .title {
+    font-family: 'Kanit';
+    font-size:2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  &-group {
+    margin-bottom:1.75rem;
+    h2 {
+      font-family: 'Kanit';
+      font-size: 1.375rem;
+      font-weight: 500;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      a {
+        margin-left:0.5rem;
+      }
+    }
+    p {
+      font-size:0.938rem;
+      font-weight: 600;
+      color: #727272;
+      margin-bottom:0.5rem;
+    }
+  }
+  &-input {
+    padding:1.875rem0.75rem0.75rem;
+    border-radius:0.5rem;
+    border:0.125rem solid #2c2c2c;
+    position: relative;
+    label {
+      position: absolute;
+      top:0.75rem;
+      font-size:0.75rem;
+      color: #727272;
+    }
+    input, textarea {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      font-size:0.938rem;
+      color: #2c2c2c;
+      font-weight: 600;
+      &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+
+
+}

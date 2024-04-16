@@ -1,0 +1,146 @@
+.balance {
+  background-image: url(/assets/imgs/detail-bg.jpg);
+  background-size: 100vw auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 1.5rem;
+
+  &-status {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 51.25rem;
+    width: 100%;
+  }
+
+  .card {
+    background-color: rgba(#fff, 0.7);
+    margin: 0;
+    .list {
+      background-color: rgba(#fff, 0.7);
+    }
+  }
+
+  &-mine {
+    margin-bottom: 11.25rem !important;
+    p {
+      margin-bottom: 0 !important;
+    }
+    &.card {
+      padding: 1rem 1.5rem;
+    }
+  }
+
+  &-storage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .title {
+      font-size:1.125rem;
+      font-weight: 600;
+      margin-bottom:0.5rem;
+      color: #818387;
+    }
+
+    .num {
+      display: flex;
+      align-items: center;
+      font-size:2.625rem;
+      font-weight: 700;
+      font-family: 'Kanit';
+      line-height:2.688rem;
+      letter-spacing:0.063rem;
+
+      img {
+        width:2.25rem;
+        margin-right:0.5rem;
+      }
+
+      &-small {
+        font-size:1.125rem;
+        font-weight: 500;
+
+        img {
+          width: 1.25rem;
+        }
+      }
+    }
+
+    small {
+      font-size: 1rem;
+      margin-right:0.5rem;
+      color: #818387;
+    }
+  }
+
+  &-progress {
+    padding: 0;
+    flex-direction: column;
+
+    &-noti {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to right, #0CA9DA, #0B9AC7, #09789B) border-box;
+      color: #fff;
+      font-size:0.875rem;
+      font-weight: 600;
+      padding:0.5rem;
+    }
+
+    .progress {
+      border-radius: 0;
+    }
+
+    &-info {
+      padding: 1rem;
+
+      img {
+        width:2.5rem;
+        margin-right:0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: 'Kanit';
+      }
+
+      span {
+        font-size:0.75rem;
+        font-weight: 500;
+        color: #727272;
+      }
+
+      .btn {
+        max-width: 40%;
+      }
+    }
+  }
+
+  &-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    &-item {
+      width: 3.625rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size:0.75rem;
+      font-weight: 500;
+      color: #2C2C2C;
+      text-decoration: none;
+      img {
+        width:2.188rem;
+        margin-bottom:0.25rem;
+      }
+    }
+  }
+}

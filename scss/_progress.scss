@@ -1,0 +1,28 @@
+.progress {
+  height:0.75rem;
+  width: 100%;
+  background-color: #D6D9DF;
+  position: relative;
+  &-gauge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    // width: 30%;
+    width: 100%;
+    background: linear-gradient(to right, #0CA9DA, #0B9AC7, #09789B) border-box;
+    z-index: 99;
+  }
+  &-indicator {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    height: 100%;
+    width:0.25rem;
+    background-color: #BEBEBE;
+  }
+
+  &-vertical {
+
+  }
+}
