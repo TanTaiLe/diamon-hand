@@ -3,7 +3,7 @@
   background-color: #EBEEF5;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: center;
   align-items: center;
   height: 100vh;
   overflow:hidden;
@@ -13,12 +13,20 @@
     text-decoration: none;
     color: #2c2c2c;
     display: inline-block;
+    position: fixed;
+    top: 24px;
+    right: 24px;
   }
   &-intro {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     img {
       width: 167px;
       margin-bottom: 1.5rem;
@@ -54,6 +62,12 @@
     .check img {
       width: 1.875rem;
     }
+  }
+  .btn {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    width: calc(100% - 48px);
   }
 }
 .form {
