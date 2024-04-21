@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="/css/app.css">
+  <script type="module" src="/js/tab.js"></script>
+  <script type="text/javascript">
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    // We listen to the resize event
+    window.addEventListener('resize', () => {
+      // We execute the same script as before
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+  </script>
+</head>
+
+<body class="mine">
+  <div class="title">
+    <img src="/assets/icons/nav-3.png" alt="">
+    <h1>Join mine</h1>
+    <p>Band together in mines to achieve more</p>
+    <a href="">How it work</a>
+  </div>
+
+  <div class="card list list-fluid">
+    <a href="" class="list-item">
+      <div class="content-group">
+        <img src="/assets/imgs/mine-menu-1.png" alt="">
+        <div class="content-group-item">
+          <p>5% cashback</p>
+          <span>The mine gets a 5% bonus when members claim DMH</span>
+        </div>
+      </div>
+    </a>
+    <a href="" class="list-item">
+      <div class="content-group">
+        <img src="/assets/imgs/mine-menu-2.png" alt="">
+        <div class="content-group-item">
+          <p>Chat room</p>
+          <span>Vote on how to use mine treasure</span>
+        </div>
+      </div>
+    </a>
+    <a href="/views/balance/leaderboard.html" class="list-item">
+      <div class="content-group">
+        <img src="/assets/imgs/mine-menu-3.png" alt="">
+        <div class="content-group-item">
+          <p>Leaderboard</p>
+          <span>Top mines get rewards</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="title mt-5">
+    <h1 class="mb-0">Have your own chat?</h1>
+    <p>Create a mine and invite all your group members. Manage treasure, complete with other mines!</p>
+    <a href="">Create a mine</a>
+  </div>
+
+</body>
+
+</html>

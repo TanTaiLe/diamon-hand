@@ -1,26 +1,188 @@
 .grade {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.313rem 0.75rem;
-  border-radius: 2.5rem;
+  padding: 24px;
 
-  &-lv1 {
-    background-color: #0CA9DA;
-    border: 0.125rem solid #5CC5E6;
-  }
-  &-lv2 {
-    // ...
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // margin-bottom: 68px;
+
+    h1 {
+      font-size: 34px;
+      font-weight: 600;
+      font-family: 'Kanit';
+      margin-bottom: 0.5rem;
+      color: #2c2c2c;
+    }
+
+    p {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 19px;
+      color: #727272;
+      text-align: center;
+    }
   }
 
-  p {
-    color: #fff;
+  &-badge {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+    border-radius: 40px;
+    text-decoration: none;
+
+    &-lv1 {
+      background-color: #D4E9EE;
+      border: 2px solid #F5F9FA;
+      box-shadow: 0 1px 0 0 rgba(#7EA0A8, 80%);
+
+      p {
+        color: #687681;
+      }
+    }
+
+    &-lv2 {
+      // ...
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 19px;
+    }
+
+    img {
+      width: 19px;
+      margin-right: 0.25rem;
+    }
+  }
+
+  &-nav {
+    padding: 50px 24px 0;
+    margin: 0 -24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .slick-list {
+      overflow: visible;
+      width: 78%;
+    }
+
+    .slick-current .grade-nav-item img {
+      transform: translateY(-50px);
+      filter: none;
+    }
+
+    &-item {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        // width: 242px;
+        width: 160%;
+        transition: .3s all;
+        filter: grayscale(1);
+        transform: translateY(20px) scale(0.6);
+      }
+    }
+  }
+
+  h2 {
+    font-size: 24px;
     font-weight: 600;
-    font-size: 0.75rem;
+    font-family: 'Kanit';
+    margin-bottom: 16px;
   }
 
-  img {
-    width: 1.125rem;
-    margin-right: 0.25rem;
+  &-achievement {
+    &-item {
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+      margin-bottom: 16px;
+
+      &::before {
+        content: '';
+        width: 85%;
+        height: 8px;
+        background-color: #8FD7EE;
+        border: 2px solid #5CC5E6;
+        position: absolute;
+        z-index: -1;
+        bottom: 32px;
+        left: 0;
+      }
+
+      .thumbnail {
+        padding: 25px 12px;
+        border-radius: 8px;
+        margin-right: 12px;
+        border: 1px solid #727272;
+
+        img {
+          width: 58px;
+        }
+
+        &.type {
+          &-1 {
+            background-color: #FDBF1E;
+          }
+
+          &-2 {
+            background-color: #FCE923;
+          }
+
+          &-3 {
+            background-color: #FD84E3;
+          }
+
+          &-4 {
+            background-color: #F35862;
+          }
+        }
+      }
+
+      h3 {
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: 'Kanit';
+      }
+    }
+  }
+  
+
+  .stage {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+      background: url(/assets/imgs/grade/pentagon-bg.png);
+      background-size: cover;
+      width: 44px;
+      height: 44px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      img {
+        width: 20px;
+      }
+    }
   }
 }

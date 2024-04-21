@@ -124,4 +124,31 @@
       width: 30% !important;
     }
   }
+
+  &-grade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .stage-item {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 16px;
+      margin-right: 0;
+      p {
+        font-size: 24px;
+      }
+      img {
+        width: 30px;
+      }
+    }
+    .popup-content {
+      h1 {
+        margin: 0;
+      }
+      p {
+        font-weight: 600;
+        color: #2c2c2c;
+      }
+    }
+  }
 }

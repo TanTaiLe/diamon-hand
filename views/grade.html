@@ -1,0 +1,628 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="/css/app.css">
+  <script type="module" src="/js/slider.js"></script>
+  <script type="text/javascript">
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    // We listen to the resize event
+    window.addEventListener('resize', () => {
+      // We execute the same script as before
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+  </script>
+</head>
+
+<body class="home grade">
+
+  <!-- <div class="popup">
+    <div class="popup-container popup-grade">
+      <span class="popup-indicator"></span>
+      <div class="stage-item">
+        <img src="/assets/icons/material-symbols/lock.svg" alt="">
+      </div>
+      <div class="popup-content">
+        <h1>Coming soon</h1>
+        <p>This achievement is not available yet</p>
+      </div>
+      <buton class="btn" id="btn-confirm">Claim</buton>
+    </div>
+  </div> -->
+
+  <!-- <div class="popup">
+    <div class="popup-container popup-grade">
+      <span class="popup-indicator"></span>
+      <div class="stage-item">
+        <p>I</p>
+      </div>
+      <div class="popup-content">
+        <h1>The Holder</h1>
+        <p>Get Crab grade (deposit > 1$)</p>
+      </div>
+      <buton class="btn" id="btn-confirm">Claim</buton>
+    </div>
+  </div> -->
+
+  <div class="title">
+    <h1>Grade</h1>
+    <p>Top up your balance to get a higher grade.
+      The higher the grade the better the opportunities!</p>
+  </div>
+
+  <div class="grade-nav">
+    <div class="grade-nav-item">
+      <img src="/assets/imgs/grade/grade-1.png" alt="">
+    </div>
+    <div class="grade-nav-item">
+      <img src="/assets/imgs/grade/grade-2.png" alt="">
+    </div>
+    <div class="grade-nav-item">
+      <img src="/assets/imgs/grade/grade-3.png" alt="">
+    </div>
+    <div class="grade-nav-item">
+      <img src="/assets/imgs/grade/grade-4.png" alt="">
+    </div>
+    <div class="grade-nav-item">
+      <img src="/assets/imgs/grade/grade-5.png" alt="">
+    </div>
+    <div class="grade-nav-item">
+      <img src="/assets/imgs/grade/grade-6.png" alt="">
+    </div>
+  </div>
+  <h2>Achievements</h2>
+  <div class="grade-content">
+    <div class="grade-content-item grade-achievement">
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-1">
+          <img src="/assets/icons/grade/holder.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Holder</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <p>II</p>
+            </div>
+            <div class="stage-item">
+              <p>III</p>
+            </div>
+            <div class="stage-item">
+              <p>IV</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-2">
+          <img src="/assets/icons/grade/villager.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Villager</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <p>II</p>
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-3">
+          <img src="/assets/icons/grade/trader.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Trader</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <p>II</p>
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-4">
+          <img src="/assets/icons/grade/winner.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Winner</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grade-content-item grade-achievement">
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-1">
+          <img src="/assets/icons/grade/holder.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Holder</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <p>II</p>
+            </div>
+            <div class="stage-item">
+              <p>III</p>
+            </div>
+            <div class="stage-item">
+              <p>IV</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-2">
+          <img src="/assets/icons/grade/villager.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Villager</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <p>II</p>
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-3">
+          <img src="/assets/icons/grade/trader.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Trader</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <p>II</p>
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-4">
+          <img src="/assets/icons/grade/winner.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Winner</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grade-content-item grade-achievement">
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-1">
+          <img src="/assets/icons/grade/holder.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Holder</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <p>II</p>
+            </div>
+            <div class="stage-item">
+              <p>III</p>
+            </div>
+            <div class="stage-item">
+              <p>IV</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-2">
+          <img src="/assets/icons/grade/villager.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Villager</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <p>II</p>
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-3">
+          <img src="/assets/icons/grade/trader.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Trader</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <p>II</p>
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-4">
+          <img src="/assets/icons/grade/winner.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Winner</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grade-content-item grade-achievement">
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-1">
+          <img src="/assets/icons/grade/holder.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Holder</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <p>II</p>
+            </div>
+            <div class="stage-item">
+              <p>III</p>
+            </div>
+            <div class="stage-item">
+              <p>IV</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-2">
+          <img src="/assets/icons/grade/villager.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Villager</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <p>II</p>
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-3">
+          <img src="/assets/icons/grade/trader.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Trader</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <p>II</p>
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-4">
+          <img src="/assets/icons/grade/winner.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Winner</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grade-content-item grade-achievement">
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-1">
+          <img src="/assets/icons/grade/holder.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Holder</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <p>II</p>
+            </div>
+            <div class="stage-item">
+              <p>III</p>
+            </div>
+            <div class="stage-item">
+              <p>IV</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-2">
+          <img src="/assets/icons/grade/villager.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Villager</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <p>II</p>
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-3">
+          <img src="/assets/icons/grade/trader.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Trader</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <p>II</p>
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-4">
+          <img src="/assets/icons/grade/winner.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Winner</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grade-content-item grade-achievement">
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-1">
+          <img src="/assets/icons/grade/holder.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Holder</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <p>II</p>
+            </div>
+            <div class="stage-item">
+              <p>III</p>
+            </div>
+            <div class="stage-item">
+              <p>IV</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-2">
+          <img src="/assets/icons/grade/villager.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Villager</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <p>II</p>
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-3">
+          <img src="/assets/icons/grade/trader.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Trader</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <p>II</p>
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grade-achievement-item">
+        <div class="thumbnail type-4">
+          <img src="/assets/icons/grade/winner.png" alt="">
+        </div>
+        <div class="d-flex flex-column">
+          <h3>The Winner</h3>
+          <div class="stage">
+            <div class="stage-item">
+              <p>I</p>
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+            <div class="stage-item">
+              <img src="/assets/icons/material-symbols/lock.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

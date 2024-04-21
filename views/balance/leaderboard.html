@@ -1,0 +1,3540 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="/css/app.css">
+  <script type="module" src="/js/tab.js"></script>
+  <script type="module" src="/js/slider.js"></script>
+  <script type="text/javascript">
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    // We listen to the resize event
+    window.addEventListener('resize', () => {
+      // We execute the same script as before
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+  </script>
+</head>
+
+<body class="mine leaderboard">
+  
+  <div class="leaderboard-nav">
+    <div class="leaderboard-nav-item">
+      <img src="/assets/imgs/mine/level-1.png" alt="">
+      <div class="d-flex align-items-end">
+        <h1>Mine</h1>
+        <span>
+          <img src="/assets/icons/material-symbols/cached.svg" alt="">
+          2
+        </span>
+      </div>
+    </div>
+    <div class="leaderboard-nav-item">
+      <img src="/assets/imgs/mine/level-2.png" alt="">
+      <div class="d-flex align-items-end">
+        <h1>Mine</h1>
+        <span>
+          <img src="/assets/icons/material-symbols/cached.svg" alt="">
+          2
+        </span>
+      </div>
+    </div>
+    <div class="leaderboard-nav-item">
+      <img src="/assets/imgs/mine/level-3.png" alt="">
+      <div class="d-flex align-items-end">
+        <h1>Mine</h1>
+        <span>
+          <img src="/assets/icons/material-symbols/cached.svg" alt="">
+          2
+        </span>
+      </div>
+    </div>
+    <div class="leaderboard-nav-item">
+      <img src="/assets/imgs/mine/level-4.png" alt="">
+      <div class="d-flex align-items-end">
+        <h1>Mine</h1>
+        <span>
+          <img src="/assets/icons/material-symbols/cached.svg" alt="">
+          2
+        </span>
+      </div>
+    </div>
+    <div class="leaderboard-nav-item">
+      <img src="/assets/imgs/mine/level-5.png" alt="">
+      <div class="d-flex align-items-end">
+        <h1>Mine</h1>
+        <span>
+          <img src="/assets/icons/material-symbols/cached.svg" alt="">
+          2
+        </span>
+      </div>
+    </div>
+    <div class="leaderboard-nav-item">
+      <img src="/assets/imgs/mine/level-6.png" alt="">
+      <div class="d-flex align-items-end">
+        <h1>Mine</h1>
+        <span>
+          <img src="/assets/icons/material-symbols/cached.svg" alt="">
+          2
+        </span>
+      </div>
+    </div>
+    <div class="leaderboard-nav-item">
+      <img src="/assets/imgs/mine/level-7.png" alt="">
+      <div class="d-flex align-items-end">
+        <h1>Mine</h1>
+        <span>
+          <img src="/assets/icons/material-symbols/cached.svg" alt="">
+          2
+        </span>
+      </div>
+    </div>
+    <div class="leaderboard-nav-item">
+      <img src="/assets/imgs/mine/level-8.png" alt="">
+      <div class="d-flex align-items-end">
+        <h1>Mine</h1>
+        <span>
+          <img src="/assets/icons/material-symbols/cached.svg" alt="">
+          2
+        </span>
+      </div>
+    </div>
+    <div class="leaderboard-nav-item">
+      <img src="/assets/imgs/mine/level-9.png" alt="">
+      <div class="d-flex align-items-end">
+        <h1>Mine</h1>
+        <span>
+          <img src="/assets/icons/material-symbols/cached.svg" alt="">
+          2
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="leaderboard-nav-arrows">
+    
+  </div> -->
+
+  <div class="leaderboard-content">
+    <div class="leaderboard-content-item">
+      <div class="tab">
+        <div class="tab-nav">
+          <button class="tab-nav-item w-50 active" id="tab-1">USD Balance</button>
+          <button class="tab-nav-item w-50" id="tab-2">DMH Balance</button>
+        </div>
+        <div class="tab-content">
+          <div id="tab-1-content" class="tab-content-item active">
+            <div class="card list list-fluid">
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>4</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>5</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>6</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>7</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>8</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>9</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>10</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div id="tab-2-content" class="tab-content-item">
+            <div class="card list list-fluid">
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>4</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>5</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>6</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>7</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>8</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>9</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>10</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="leaderboard-content-item">
+      <div class="tab">
+        <div class="tab-nav">
+          <button class="tab-nav-item w-50 active" id="tab-1">USD Balance</button>
+          <button class="tab-nav-item w-50" id="tab-2">DMH Balance</button>
+        </div>
+        <div class="tab-content">
+          <div id="tab-1-content" class="tab-content-item active">
+            <div class="card list list-fluid">
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>4</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>5</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>6</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>7</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>8</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>9</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>10</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div id="tab-2-content" class="tab-content-item">
+            <div class="card list list-fluid">
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>4</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>5</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>6</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>7</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>8</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>9</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>10</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="leaderboard-content-item">
+      <div class="tab">
+        <div class="tab-nav">
+          <button class="tab-nav-item w-50 active" id="tab-1">USD Balance</button>
+          <button class="tab-nav-item w-50" id="tab-2">DMH Balance</button>
+        </div>
+        <div class="tab-content">
+          <div id="tab-1-content" class="tab-content-item active">
+            <div class="card list list-fluid">
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>4</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>5</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>6</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>7</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>8</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>9</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>10</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div id="tab-2-content" class="tab-content-item">
+            <div class="card list list-fluid">
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>4</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>5</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>6</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>7</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>8</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>9</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>10</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="leaderboard-content-item">
+      <div class="tab">
+        <div class="tab-nav">
+          <button class="tab-nav-item w-50 active" id="tab-1">USD Balance</button>
+          <button class="tab-nav-item w-50" id="tab-2">DMH Balance</button>
+        </div>
+        <div class="tab-content">
+          <div id="tab-1-content" class="tab-content-item active">
+            <div class="card list list-fluid">
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>4</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>5</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>6</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>7</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>8</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>9</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>10</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div id="tab-2-content" class="tab-content-item">
+            <div class="card list list-fluid">
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>4</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>5</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>6</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>7</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>8</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>9</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>10</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="leaderboard-content-item">
+      <div class="tab">
+        <div class="tab-nav">
+          <button class="tab-nav-item w-50 active" id="tab-1">USD Balance</button>
+          <button class="tab-nav-item w-50" id="tab-2">DMH Balance</button>
+        </div>
+        <div class="tab-content">
+          <div id="tab-1-content" class="tab-content-item active">
+            <div class="card list list-fluid">
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>4</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>5</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>6</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>7</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>8</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>9</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>10</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div id="tab-2-content" class="tab-content-item">
+            <div class="card list list-fluid">
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>4</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>5</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>6</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>7</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>8</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>9</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>10</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="leaderboard-content-item">
+      <div class="tab">
+        <div class="tab-nav">
+          <button class="tab-nav-item w-50 active" id="tab-1">USD Balance</button>
+          <button class="tab-nav-item w-50" id="tab-2">DMH Balance</button>
+        </div>
+        <div class="tab-content">
+          <div id="tab-1-content" class="tab-content-item active">
+            <div class="card list list-fluid">
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>4</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>5</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>6</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>7</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>8</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>9</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>10</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div id="tab-2-content" class="tab-content-item">
+            <div class="card list list-fluid">
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>4</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>5</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>6</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>7</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>8</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>9</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>10</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="leaderboard-content-item">
+      <div class="tab">
+        <div class="tab-nav">
+          <button class="tab-nav-item w-50 active" id="tab-1">USD Balance</button>
+          <button class="tab-nav-item w-50" id="tab-2">DMH Balance</button>
+        </div>
+        <div class="tab-content">
+          <div id="tab-1-content" class="tab-content-item active">
+            <div class="card list list-fluid">
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>4</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>5</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>6</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>7</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>8</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>9</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>10</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div id="tab-2-content" class="tab-content-item">
+            <div class="card list list-fluid">
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>4</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>5</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>6</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>7</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>8</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>9</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>10</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="leaderboard-content-item">
+      <div class="tab">
+        <div class="tab-nav">
+          <button class="tab-nav-item w-50 active" id="tab-1">USD Balance</button>
+          <button class="tab-nav-item w-50" id="tab-2">DMH Balance</button>
+        </div>
+        <div class="tab-content">
+          <div id="tab-1-content" class="tab-content-item active">
+            <div class="card list list-fluid">
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>4</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>5</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>6</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>7</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>8</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>9</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>10</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div id="tab-2-content" class="tab-content-item">
+            <div class="card list list-fluid">
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>4</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>5</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>6</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>7</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>8</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>9</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>10</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="leaderboard-content-item">
+      <div class="tab">
+        <div class="tab-nav">
+          <button class="tab-nav-item w-50 active" id="tab-1">USD Balance</button>
+          <button class="tab-nav-item w-50" id="tab-2">DMH Balance</button>
+        </div>
+        <div class="tab-content">
+          <div id="tab-1-content" class="tab-content-item active">
+            <div class="card list list-fluid">
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>4</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>5</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>6</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>7</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>8</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>9</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>10</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div id="tab-2-content" class="tab-content-item">
+            <div class="card list list-fluid">
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>4</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>5</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>6</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>7</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>8</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>9</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+              <a href="" class="list-item">
+                <div class="content-group">
+                  <div class="rank">
+                    <span>10</span>
+                  </div>
+                  <img src="/assets/imgs/avatar.webp" alt="">
+                  <div class="content-group-item">
+                    <p>MR Daily</p>
+                    <div class="d-flex align-items">
+                      <span class="me-3"><img src="/assets/icons/material-symbols/account_circle.svg" alt="">0</span>
+                      <span><img src="/assets/logo-no-bg.png" alt="">88.76</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="arrow">
+                  <img src="/assets/icons/material-symbols/arrow_forward_ios.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
