@@ -6,7 +6,8 @@
   // justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow:hidden;
+  overflow: hidden;
+
   &-link {
     font-size: 1rem;
     font-weight: 600;
@@ -17,36 +18,43 @@
     top: 24px;
     right: 24px;
   }
+
   &-intro {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     margin: 0;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+
     img {
       width: 167px;
       margin-bottom: 1.5rem;
     }
+
     * {
       text-align: center;
     }
+
     h1 {
       font-family: 'Kanit';
       font-size: 2.5rem;
       font-weight: 700;
     }
+
     p {
       font-size: 0.938rem;
       font-weight: 600;
     }
   }
+
   &-list {
     background: transparent;
   }
+
   &-item {
     padding: 0.75rem;
     border-radius: 0.5rem;
@@ -54,15 +62,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     p {
       color: #2c2c2c !important;
       font-size: 0.938rem;
       font-weight: 600;
     }
+
     .check img {
       width: 1.875rem;
     }
   }
+
   .btn {
     position: fixed;
     bottom: 24px;
@@ -70,17 +81,21 @@
     width: calc(100% - 48px);
   }
 }
+
 .form {
   width: 100%;
+
   .title {
     font-family: 'Kanit';
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
   }
+
   &-group {
     margin-bottom: 1.75rem;
     width: 100%;
+
     h2 {
       font-family: 'Kanit';
       font-size: 1.375rem;
@@ -88,10 +103,12 @@
       margin: 0;
       display: flex;
       align-items: center;
+
       a {
         margin-left: 0.5rem;
       }
     }
+
     p {
       font-size: 0.938rem;
       font-weight: 600;
@@ -99,24 +116,29 @@
       margin-bottom: 0.5rem;
     }
   }
+
   &-input {
     padding: 1.875rem 0.75rem 0.75rem;
     border-radius: 0.5rem;
     border: 0.125rem solid #2c2c2c;
     position: relative;
+
     label {
       position: absolute;
       top: 0.75rem;
       font-size: 0.75rem;
       color: #727272;
     }
-    input, textarea {
+
+    input,
+    textarea {
       width: 100%;
       background-color: transparent;
       border: none;
       font-size: 0.938rem;
       color: #2c2c2c;
       font-weight: 600;
+
       &:focus {
         border: none;
         outline: none;
@@ -124,5 +146,24 @@
     }
   }
 
+  .warning {
+    display: flex;
+    align-items: start;
+    padding: 12px;
+    background-color: #F5E6D4;
+    border-radius: 8px;
+    border: 1px solid #DB7F13;
+    margin-bottom: 24px;
 
+    img {
+      margin-right: 8px;
+    }
+
+    p {
+      color: #DB7F13;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 18px;
+    }
+  }
 }

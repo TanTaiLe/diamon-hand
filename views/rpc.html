@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="/css/app.css">
+  <script type="text/javascript">
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    // We listen to the resize event
+    window.addEventListener('resize', () => {
+      // We execute the same script as before
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+  </script>
+</head>
+
+<body class="home settings">
+  <div class="card list list-fluid menu">
+    <div class="list-item">
+      <div class="content-group">
+        <img src="/assets/logo-no-bg.png" alt="">
+        <div class="content-group-item">
+          <p>DIAMON HAND Protocol</p>
+        </div>
+      </div>
+    </div>
+    <div class="list-item">
+      <div class="d-flex align-items-center">
+        <div class="icon-box">
+          <img src="/assets/icons/material-symbols/menu_book.svg" alt="">
+        </div>
+        <p>rpc.near.org</p>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+      </div>
+    </div>
+    <div class="list-item">
+      <div class="d-flex align-items-center">
+        <div class="icon-box">
+          <img src="/assets/icons/material-symbols/menu_book.svg" alt="">
+        </div>
+        <p>rpc.mainnet.near.org</p>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
