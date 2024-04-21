@@ -7,14 +7,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foundation for Sites</title>
   <link rel="stylesheet" href="css/app.css">
-  <script type="module" src="js/tab.js"></script>
+  <script type="text/javascript">
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    // We listen to the resize event
+    window.addEventListener('resize', () => {
+      // We execute the same script as before
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+  </script>
 </head>
 
 <body class="home">
 
-  <span class="toast">
+  <!-- <span class="toast">
     Deposit feature is coming soon
-  </span>
+  </span> -->
+
+  <!-- <div class="popup">
+    <div class="popup-container popup-promo">
+      <span class="popup-indicator"></span>
+      <img src="/assets/imgs/phone-mockup.png" alt="" class="popup-thumb">
+      <div class="popup-content">
+        <h1>DIAMON Wallet</h1>
+        <p>A cold wallet with an NFT inside</p>
+      </div>
+      <a href="/views/promo.html" class="btn btn-white" id="btn-confirm">Read more</a>
+    </div>
+  </div> -->
+
 
   <div class="home-header">
     <div class="home-header-fixed-width">
@@ -28,7 +53,7 @@
       <a href="" class="func-item">
         <img src="assets/icons/material-symbols/qr_code.svg" alt="">
       </a>
-      <a href="" class="func-item">
+      <a href="/views/settings.html" class="func-item">
         <img src="assets/icons/material-symbols/settings.svg" alt="">
       </a>
     </div>
@@ -45,8 +70,8 @@
       <span>Total Balance</span>
       <h1>$<span id="current-balance">0</span></h1>
       <div class="d-flex align-items-center justify-content-between">
-        <button class="btn">Swap</button>
-        <button class="btn">Transfer</button>
+        <a href="/views/swap.html" class="btn">Swap</a>
+        <a href="/views/transfer.html" class="btn">Transfer</a>
       </div>
     </div>
 

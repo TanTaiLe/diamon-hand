@@ -5,6 +5,7 @@ const sourcemaps = require('gulp-sourcemaps');
 
 const includePaths = [
     'node_modules/bootstrap/scss',
+    'node_modules/slick-carousel/slick',
 ];
 
 function sassBuild() {

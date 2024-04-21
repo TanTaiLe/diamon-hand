@@ -71,6 +71,7 @@
   }
 }
 .form {
+  width: 100%;
   .title {
     font-family: 'Kanit';
     font-size: 2.5rem;
@@ -79,6 +80,7 @@
   }
   &-group {
     margin-bottom: 1.75rem;
+    width: 100%;
     h2 {
       font-family: 'Kanit';
       font-size: 1.375rem;

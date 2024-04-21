@@ -1,39 +1,15 @@
-*, p {
-  font-family: 'Inter';
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  color: #2C2C2C;
-}
-body {
-  background-color: #EBEEF5;
-}
-
 .settings {
   padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  h1 {
-    font-size: 30px;
-    font-family: 'Kanit';
-    font-weight: 700;
-    margin-bottom: 0;
-    color: #2C2C2C
-  }
-
-  p {
-    font-size: 12px;
-    color: #727272;
-    margin-bottom: 24px;
-  }
+  align-items: center;
 
   .list {
     padding: 0;
 
     &-item {
-      padding: 16px !important;
+      padding: 16px;
 
 
       &::before {
@@ -69,7 +45,7 @@ body {
         color: #727272;
       }
 
-      .arrow img, .check img {
+      .arrow img {
         width: 16px !important;
         margin-right: 0;
       }
@@ -106,10 +82,8 @@ body {
       margin-right: 8px;
     }
   }
-
   .logout {
     margin-bottom: 0;
-    border: none;
     .list-item {
       background-color: rgba(#F64F59, 15%);
       .icon-box {

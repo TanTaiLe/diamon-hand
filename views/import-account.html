@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="/css/app.css">
+  <script type="text/javascript">
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    // We listen to the resize event
+    window.addEventListener('resize', () => {
+      // We execute the same script as before
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+  </script>
+</head>
+
+<body class="home settings justify-content-start">
+  <h1>Select account</h1>
+  <p>There use of automated DMH mining software is prohibited. This can lead to blocking of the miner’s account and loss of all earned DMH.</p>
+  <div>
+    <div class="card list list-fluid menu">
+      <a href="" class="list-item">
+        <div class="content-group">
+          <img src="/assets/icons/material-symbols/account_box.svg" alt="">
+          <div class="content-group-item">
+            <p>7168512550.tg</p>
+            <span>0.00 DIAMON HAND | 0.01 DMH</span>
+          </div>
+        </div>
+        
+        <span class="check">
+          <img src="/assets/icons/check-mark.png" alt="">
+        </span>
+      </a>
+    </div>
+
+    <div class="card list list-fluid menu">
+      <a href="/views/account/recover.html" class="list-item">
+        <div class="content-group">
+          <div class="icon-box">
+            <img src="/assets/icons/material-symbols/add_box.svg" alt="">
+          </div>
+          <div class="content-group-item">
+            <p>Import account</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</body>
+
+</html>

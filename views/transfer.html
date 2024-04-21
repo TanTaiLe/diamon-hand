@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foundation for Sites</title>
   <link rel="stylesheet" href="/css/app.css">
-  <script type="module" src="/js/loader.js"></script>
+
   <script type="text/javascript">
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
     let vh = window.innerHeight * 0.01;
@@ -23,20 +23,19 @@
   </script>
 </head>
 
-<body class="account">
-  <div class="loader">
-    <div class="progress-circle-container">
-      <div class="progress-circle-outer animate">
-      </div>
-      <div class="progress-circle-inner">
-        <span class="number" id="number">0</span>
-        <span class="unit">%</span>
+<body class="home transfer">
+
+  <form action="" class="form">
+    <div class="form-group">
+      <!-- <h2>Address</h2>
+      <p>We have created a unique Diamon Hand address for you, which is similar to your telegram nickname.</p> -->
+      <div class="form-input">
+        <label for="">Enter receiver</label>
+        <input type="text" value=" ">
       </div>
     </div>
-  </div>
-  <span class="loader-tips">
-    <b>Pro tip:</b> Join the village to earn and share awards
-  </span>
+    <button class="btn btn-flat btn-lg btn-disable">Next</button>
+  </form>
 </body>
 
 </html>

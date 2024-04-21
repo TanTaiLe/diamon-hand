@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="/css/app.css">
+  <script type="module" src="/js/slider.js"></script>
+  <script type="text/javascript">
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    // We listen to the resize event
+    window.addEventListener('resize', () => {
+      // We execute the same script as before
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+  </script>
+</head>
+
+<body class="home promo">
+
+  <div class="promo-container w-100" id="promoSlider">
+    <div class="promo-page">
+      <img src="/assets/imgs/promo-1.png" alt="">
+      <div class="promo-content">
+        <h1>What is DMH?</h1>
+        <p>DMH - native token on Diamon Hand Blockchain. First allocation of DMH will be distributed to early users.</p>
+        <div class="d-flex justify-content-end w-100">
+          <button class="btn">Continue</button>
+        </div>
+      </div>
+    </div>
+    <div class="promo-page">
+      <img src="/assets/imgs/promo-2.png" alt="">
+      <div class="promo-content">
+        <h1>Mining</h1>
+        <p>Until the entire stock is distributed everyone can get DMH. Create a wallet to start mining DMH and boost
+          your ”cave” to mine faster.</p>
+        <div class="d-flex justify-content-end w-100">
+          <button class="btn">Continue</button>
+        </div>
+      </div>
+    </div>
+    <div class="promo-page">
+      <img src="/assets/imgs/promo-1.png" alt="">
+      <div class="promo-content">
+        <h1>Why DMH?</h1>
+        <p>DMH will be used as the main currency in build-in Telegram games and apps on Diamon Hand. Main announcement
+          are comming soon.</p>
+        <div class="d-flex justify-content-end w-100">
+          <a href="/views/balance/balance.html" class="btn btn-yellow">Start mining</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
