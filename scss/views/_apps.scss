@@ -1,0 +1,63 @@
+.apps {
+  padding: 24px 24px 40px;
+  &-item {
+    margin-bottom: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+    &-content {
+      background-color: #DEE5F2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+      img {
+        width: 50px;
+        margin-right: 12px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 23px;
+        font-family: 'Kanit';
+        font-weight: 500;
+        color: #2c2c2c;
+        margin-bottom: 0;
+      }
+      span {
+        font-size: 12px;
+        font-weight: 500;
+        color: #727272;
+      }
+      .btn {
+        width: 29%;
+      }
+    }
+
+  }
+  .card {
+    padding: 16px;
+    margin-bottom: 16px;
+    .list-item {
+      padding: 0;
+      img {
+        margin-right: 12px;
+      }
+      p {
+        font-size: 15px;
+        font-family: 'Kanit';
+        font-weight: 500;
+        margin-bottom: 0;
+        line-height: 23px;
+        text-align: left;
+      }
+      .arrow {
+        margin-left: 8px;
+        img {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
