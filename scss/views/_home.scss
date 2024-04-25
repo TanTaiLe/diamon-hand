@@ -1,8 +1,8 @@
 .home {
   background-color: #EBEEF5;
-  height: 100vh;
-  /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
+  padding-bottom: 40px;
+  // height: 100vh;
+  // height: calc(var(--vh, 1vh) * 100);
 
   &-header {
     padding: 0.5rem 1.5rem;
@@ -16,7 +16,7 @@
     }
 
     .logo {
-      width: 2.25rem;
+      width: 36px;
       height: auto;
     }
 
@@ -28,14 +28,14 @@
   }
 
   &-body {
-    padding: 0 1.5rem;
+    padding: 0 24px;
   }
 
   &-username {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.75rem 0;
+    padding: 12px 0;
 
     p {
       font-size: 0.938rem;
@@ -51,6 +51,7 @@
   &-balance {
     margin-bottom: 1.5rem;
     flex-direction: column;
+    background-color: #DEE5F2;
 
     * {
       width: 100%;
@@ -81,6 +82,16 @@
     overflow: hidden;
     flex-direction: column;
     margin-bottom: 1.5rem;
+    .close {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      img {
+        width: 100%;
+      }
+    }
 
     h2 {
       font-size: 1.375rem;
@@ -136,6 +147,7 @@
   }
 
   &-status {
+    display: block;
     margin-bottom: 1.5rem;
     text-decoration: none;
 
@@ -232,6 +244,8 @@
   justify-content: center;
   align-items: center;
   padding: 24px;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 
   .slick-dots {
     display: flex;
@@ -263,7 +277,7 @@
   }
 
   &-container {
-    margin-top: 64px;
+    // margin-top: 64px;
   }
 
   &-page {
@@ -306,16 +320,20 @@
 
 .swap {
   padding: 24px;
+  align-items: center;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+
 
   .popup-container {
-    padding: 1.5rem;
+    padding: 24px;
+    display: block;
 
     .swap-currency {
-      margin-bottom: 16px;
+      margin-bottom: 8px;
 
       &:last-child {
         margin-bottom: 0;
@@ -449,6 +467,9 @@
         padding: 6px 12px;
         border-radius: 8px;
         margin: 12px 4px 0;
+        &.selected {
+          border-color: #727272;
+        }
       }
     }
   }

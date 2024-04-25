@@ -4,13 +4,17 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 24px;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &-status {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    // height: 51.25rem;
     width: 100%;
   }
 
@@ -23,12 +27,11 @@
   }
 
   &-mine {
-    // margin-bottom: 11.25rem !important;
     p {
       margin-bottom: 0 !important;
     }
     &.card {
-      padding: 1rem 1.5rem;
+      padding: 16px;
     }
   }
 
@@ -37,7 +40,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 20% 0;
+    margin-bottom: 80px;
 
     .title {
       font-size: 1.125rem;
@@ -56,7 +59,7 @@
       letter-spacing: 0.063rem;
 
       img {
-        width: 2.25rem;
+        width: 36px;
         margin-right: 0.5rem;
       }
 
@@ -89,7 +92,7 @@
       color: #fff;
       font-size: 0.875rem;
       font-weight: 600;
-      padding: 0.5rem;
+      padding: 8px;
     }
 
     .progress {
@@ -97,10 +100,10 @@
     }
 
     &-info {
-      padding: 1rem;
+      padding: 16px;
 
       img {
-        width: 2.5rem;
+        width: 44px;
         margin-right: 0.5rem;
       }
 
@@ -126,12 +129,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    bottom: 1.5rem;
-    padding: 1rem;
-    width: calc(100% - 48px);
+    padding: 16px;
     &-item {
-      width: 3.625rem;
+      width: calc((100% - 16px * 3) / 4);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -141,7 +141,7 @@
       color: #2C2C2C;
       text-decoration: none;
       img {
-        width: 2.188rem;
+        width: 36px;
         margin-bottom: 0.25rem;
       }
     }
