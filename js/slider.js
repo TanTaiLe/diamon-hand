@@ -7,7 +7,8 @@ jQuery(function () {
   jQuery('#promoSlider').slick({
     dots: true,
     arrows: false,
-    fade: true
+    fade: true,
+    lazyLoad: 'ondemand'
   });
 
   // Slider for grade
@@ -19,7 +20,8 @@ jQuery(function () {
     focusOnSelect: true,
     arrows: false,
     infinite: false,
-    swipe: false
+    swipe: false,
+    lazyLoad: 'ondemand'
   });
   jQuery('.grade-content').slick({
     slidesToShow: 1,
@@ -28,7 +30,8 @@ jQuery(function () {
     fade: true,
     asNavFor: '.grade-content',
     infinite: false,
-    swipe: false
+    swipe: false,
+    lazyLoad: 'ondemand'
   });
 
   // Slider for mine leaderboard
@@ -39,6 +42,7 @@ jQuery(function () {
     infinite: false,
     swipe: true,
     fade: true,
+    lazyLoad: 'ondemand'
   });
   jQuery('.leaderboard-content').slick({
     slidesToScroll: 1,
@@ -46,7 +50,8 @@ jQuery(function () {
     fade: true,
     asNavFor: '.leaderboard-content',
     infinite: false,
-    swipe: false
+    swipe: false,
+    lazyLoad: 'ondemand'
   });
 })
 
