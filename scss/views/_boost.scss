@@ -1,7 +1,8 @@
 .boost {
-  padding-top: 2.5rem;
-  justify-content: flex-start;
-
+  .scrollable {
+    justify-content: flex-start;
+    padding: 40px 24px;
+  }
   .card {
     margin-bottom: 1.5rem;
   }

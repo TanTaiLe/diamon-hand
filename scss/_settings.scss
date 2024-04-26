@@ -10,3 +10,13 @@ p {
 body {
   background-color: #EBEEF5;
 }
+
+.scrollable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  margin: 0 -24px;
+  padding: 24px;
+  width: 100%;
+}
