@@ -82,12 +82,14 @@
     overflow: hidden;
     flex-direction: column;
     margin-bottom: 1.5rem;
+
     .close {
       width: 24px;
       height: 24px;
       position: absolute;
       right: 16px;
       top: 16px;
+
       img {
         width: 100%;
       }
@@ -234,6 +236,102 @@
         font-family: 'Kanit';
         color: #2c2c2c;
         line-height: 1.438rem;
+      }
+    }
+  }
+}
+
+.recent {
+  margin-top: 24px;
+
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    * {
+      font-size: 12px;
+      color: #2c2c2c;
+      margin-bottom: 0;
+      width: auto;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-weight: 600;
+
+      img {
+        width: 20px;
+      }
+    }
+  }
+
+  &-list {
+    margin: 0 -16px;
+    max-height: auto;
+    width: auto;
+    overflow: hidden;
+    transition: all 0.3s;
+    &.shrink {
+      
+    }
+
+    * {
+      width: auto;
+    }
+
+    &-item {
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .icon {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #EBEEF5;
+        border-radius: 8px;
+        margin-right: 8px;
+
+        img {
+          width: 20px;
+        }
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          font-size: 15px;
+          font-weight: 600;
+          line-height: 20px;
+          color: #2c2c2c;
+          margin: 0;
+          width: auto;
+        }
+
+        span {
+          font-size: 12px;
+          color: #727272;
+        }
+      }
+    }
+  }
+
+  &-toggle {
+    span {
+      font-weight: 600;
+    }
+    &.active {
+      img {
+        transform: rotate(180deg);
       }
     }
   }
@@ -467,6 +565,7 @@
         padding: 6px 12px;
         border-radius: 8px;
         margin: 12px 4px 0;
+
         &.selected {
           border-color: #727272;
         }
