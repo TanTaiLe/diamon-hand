@@ -43,7 +43,7 @@
         <div class="right">
           <div class="swap-currency-text d-flex flex-column">
             <p>$0</p>
-            <div class="d-flex">
+            <div class="d-flex positive">
               <span>$0</span>
               <b>0%</b>
             </div>
@@ -65,7 +65,7 @@
         <div class="right">
           <div class="swap-currency-text d-flex flex-column">
             <p>$0</p>
-            <div class="d-flex">
+            <div class="d-flex negative">
               <span>$0</span>
               <b>0%</b>
             </div>
@@ -207,25 +207,16 @@
     </div>
   </div> -->
 
-  <a href="" class="card swap-currency">
-    <div class="left">
-      <img src="/assets/logo-no-bg.png" alt="">
-      <div class="swap-currency-text d-flex flex-column">
-        <span>From</span>
-        <p>DMH</p>
-      </div>
-    </div>
-    <div class="arrow">
-      <img src="/assets/icons/material-symbols/arrow_right_alt.svg" alt="">
-    </div>
-    <div class="right">
-      <div class="swap-currency-text d-flex flex-column">
-        <span>To</span>
-        <p>USDT</p>
-      </div>
-      <img src="/assets/logo-no-bg.png" alt="">
-    </div>
-  </a>
+  <div class="d-flex justify-content-end w-100">
+    <a href="" class="swap-currency-toggle">
+      <span class="title">
+        <img src="/assets/logo-no-bg.png" alt="">
+        DMH
+      </span>
+      <img src="/assets/icons/material-symbols/expand_more.svg" alt="">
+    </a>
+  </div>
+
   <div class="swap-input">
     <input type="text" value="0">
     <small>0 DMH Available</small>
@@ -236,23 +227,19 @@
   </div>
   <div class="swap-information">
     <div class="swap-information-item">
-      <p>You need to keep 0.2 DMH on your balance</p>
-      <img src="/assets/icons/material-symbols/info.svg" alt="">
-    </div>
-    <div class="swap-information-item">
-      <p>Est.Recieve</p>
-      <p>0 USDT (0$)</p>
+      <p>Network</p>
+      <p><img src="/assets/logo.png" alt="">DIAMON</p>
     </div>
     <div class="swap-information-item">
       <p>Price</p>
-      <p>1 DMH = 6.82 USDT</p>
+      <p>1 DMH = $0</p>
     </div>
     <div class="swap-information-item">
-      <p>Price impact</p>
-      <span>0 DMH</span>
+      <p>Amount</p>
+      <p>0 DMH ($0)</p>
     </div>
 
-    <button class="btn">Review</button>
+    <a href="/views/transfer-review.html" class="btn">Review</a>
   </div>
 </body>
 

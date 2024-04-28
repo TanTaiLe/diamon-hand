@@ -9,6 +9,11 @@ $btn-border-color-yellow: linear-gradient($btn-color-yellow 0 0) padding-box,
 linear-gradient(to bottom, #FFE5A1, #FCD58B, #F2B252) border-box;
 
 
+$btn-color-black: #282828;
+$btn-border-color-black: linear-gradient($btn-color-black 0 0) padding-box,
+linear-gradient(to bottom, #656565, #454545) border-box;
+
+
 .btn {
   width: 100%;
   padding: 0.5rem 0;
@@ -71,6 +76,10 @@ linear-gradient(to bottom, #FFE5A1, #FCD58B, #F2B252) border-box;
     &:focus-visible {
       color: #2C2C2C;
     }
+  }
+
+  &-black {
+    background: $btn-border-color-black;
   }
 
   &-disable {
