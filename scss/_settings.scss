@@ -20,3 +20,17 @@ body {
   padding: 24px;
   width: 100%;
 }
+
+.warning {
+  color: #DB7F13;
+  border: 1px solid #DB7F13;
+  background-color: #F5E6D4;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  display: block;
+  border-radius: 8px;
+  margin-top: 24px;
+  font-family: 'Inter';
+}

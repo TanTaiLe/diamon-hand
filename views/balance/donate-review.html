@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="/css/app.css">
+
+  <script type="text/javascript">
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    // We listen to the resize event
+    window.addEventListener('resize', () => {
+      // We execute the same script as before
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+  </script>
+</head>
+
+<body class="home swap review">
+
+  <div class="w-100">
+    <h1>Review</h1>
+    <h2>10 <span>DMH</span></h2>
+    <div class="swap-information">
+      <div class="swap-information-item">
+        <p>Network</p>
+        <p><img src="/assets/logo.png" alt="">DIAMON</p>
+      </div>
+      <div class="swap-information-item">
+        <p>Price</p>
+        <p>1 DMH = $0</p>
+      </div>
+      <div class="swap-information-item">
+        <p>Amount</p>
+        <p>0 DMH ($0)</p>
+      </div>
+    </div>
+    <samp class="warning">
+      You make a donation to the village FreeCryptoCash Community. These tokens can only be distributed bt the village owner.
+    </samp>
+  </div>
+
+  <div class="w-100">
+    <a href="" class="btn mb-2">Review</a>
+    <a href="" class="btn btn-black">Back</a>
+  </div>
+
+</body>
+
+</html>

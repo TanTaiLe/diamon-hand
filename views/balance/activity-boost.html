@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="/css/app.css">
+  <script type="text/javascript">
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    // We listen to the resize event
+    window.addEventListener('resize', () => {
+      // We execute the same script as before
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+  </script>
+</head>
+
+<body class="account activity-boost">
+  <form action="" class="form">
+    <img src="/assets/imgs/boost-activity.png" alt="">
+    <h1 class="title">Boost activity</h1>
+    <div class="form-group">
+      <p>Send a reminder to every miner who haven’t claimed today. You can send a reminder to 
+        <b>1 of your miners</b>. They will get a message in the bot.</p>
+      <div class="form-input">
+        <label for="">Enter message for your miners</label>
+        <textarea name="" id="" rows="3"></textarea>
+      </div>
+    </div>
+  </form>
+  <a href="/views/account/login.html" class="btn">Boost miners</a>
+</body>
+
+</html>

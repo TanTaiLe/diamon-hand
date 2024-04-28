@@ -1,0 +1,461 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="/css/app.css">
+  <script type="module" src="/js/tab.js"></script>
+  <script type="text/javascript">
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    // We listen to the resize event
+    window.addEventListener('resize', () => {
+      // We execute the same script as before
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+  </script>
+</head>
+
+<body class="leaderboard mine-detail">
+
+  <!-- <div class="popup">
+    <div class="popup-container popup-currency">
+      <span class="popup-indicator"></span>
+      <a href="" class="card swap-currency">
+        <div class="left">
+          <img src="/assets/imgs/usmeme.png" alt="">
+          <img class="sub-icon" src="/assets/logo-no-bg.png" alt="">
+          <div class="swap-currency-text d-flex flex-column">
+            <p>USMeme</p>
+            <div class="d-flex">
+              <span>~0</span>
+              <b>$0</b>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="swap-currency-text d-flex flex-column">
+            <p>$0</p>
+            <div class="d-flex">
+              <span>$0</span>
+              <b>0%</b>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div> -->
+
+  <!-- <div class="popup">
+    <div class="popup-container">
+      <span class="popup-indicator"></span>
+      <div class="popup-content">
+        <h1>Activity score</h1>
+        <p>Activity Score is the proportion of residents who have clamed DMH in the last 24 hours. A high level of
+          activity gives you strike point. More utilities coming soon!</p>
+      </div>
+      <buton class="btn" id="btn-confirm">Got it</buton>
+    </div>
+  </div> -->
+
+  <!-- <div class="popup">
+    <div class="popup-container">
+      <span class="popup-indicator"></span>
+      <div class="popup-content">
+        <h1>Share join link</h1>
+        <p>You can share your referral link, which will also allow your referrals to immediately join this village.</p>
+        <label for="add">
+          <input type="checkbox" name="add" id="">
+          Add new village member to my referrals automatically
+        </label>
+      </div>
+      <buton class="btn" id="btn-confirm">Copy join link</buton>
+    </div>
+  </div> -->
+
+  <!-- <div class="popup">
+    <div class="popup-container">
+      <span class="popup-indicator"></span>
+      <div class="popup-thumb-group">
+        <img class="popup-thumb" src="/assets/imgs/mine-sample.png" alt="">
+        <img src="/assets/icons/material-symbols/arrow_right_alt.svg" alt="">
+        <img class="popup-thumb" src="/assets/imgs/mine/level-1.png" alt="">
+      </div>
+      <div class="popup-content">
+        <h1>Telegram: Contact
+          @hamzasslmchat</h1>
+        <p>The mine gets a 5% DMH cashback from
+          each your claim. This DMH can be distributed
+          to the community or spent on mine growth.</p>
+      </div>
+      <buton class="btn" id="btn-confirm">Join (0.05 DMH)</buton>
+    </div>
+  </div> -->
+
+  <!-- <div class="popup">
+    <div class="popup-container">
+      <span class="popup-indicator"></span>
+        <img class="popup-thumb" src="/assets/imgs/mine-sample.png" alt="">
+      <div class="popup-content">
+        <h1>FreeCryptoCash
+          Community</h1>
+        <p>The mine gets a 5% DMH cashback from
+          each your claim. This DMH can be distributed
+          to the community or spent on mine growth.</p>
+      </div>
+      <buton class="btn btn-red" id="btn-confirm">Leave (0.05 DMH)</buton>
+    </div>
+  </div> -->
+
+  <!-- <div class="popup">
+    <div class="popup-container popup-kick">
+      <span class="popup-indicator"></span>
+      <img class="popup-thumb" src="/assets/imgs/avatar.webp" alt="">
+      <div class="popup-content">
+        <div class="value">
+          <img src="/assets/logo-no-bg.png" alt="">0.2
+        </div>
+        <h1>Tesla Nicolas</h1>
+      </div>
+      <buton class="btn btn-red" id="btn-confirm">Kick out of the mine</buton>
+    </div>
+  </div> -->
+
+
+  <div class="scrollable">
+    <div class="mine-detail-avatar">
+      <img src="/assets/imgs/mine/level-1.png" alt="">
+    </div>
+    <div class="mine-detail-name">
+      <h1>Telegram: Contact@tantaile421</h1>
+      <div class="d-flex align-items-center my-3">
+        <span><img src="/assets/icons/material-symbols/account_circle_black.svg" alt=""> 9</span>
+        <span><img src="/assets/logo-no-bg.png" alt=""> 88.76</span>
+      </div>
+      <div class="d-flex align-items-center">
+        <a href="/views/balance/donate.html" class="highlight">Donate DMH <img
+            src="/assets/icons/material-symbols/favorite.png" alt=""></a>
+        <a href="">Portfolio <img src="/assets/icons/material-symbols/currency_bitcoin.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="mine-detail-features">
+      <div class="d-flex">
+        <div class="card top">
+          <img src="/assets/imgs/mine/level-1.png" alt="">
+          <p>Tribe</p>
+          <span>#100001 <img src="/assets/icons/material-symbols/east.svg" alt=""></span>
+        </div>
+        <div class="card top">
+          <img class="guide" src="/assets/icons/material-symbols/info.svg" alt="">
+          <img src="/assets/logo-no-bg.png" alt="">
+          <p>0%</p>
+          <span>Activity core</span>
+        </div>
+      </div>
+      <div class="card address">
+        <p>Address</p>
+        <span>174678.village.hot.tg <img src="/assets/icons/material-symbols/language.svg" alt=""></span>
+      </div>
+      <div class="card nav">
+        <a href="" class="nav-item">
+          <img src="/assets/icons/material-symbols/chat.svg" alt="">
+          Chat
+        </a>
+        <a href="" class="nav-item">
+          <img src="/assets/icons/material-symbols/share.svg" alt="">
+          Share
+        </a>
+        <a href="/views/balance/activity-manage.html" class="nav-item">
+          <img src="/assets/icons/material-symbols/settings_line.svg" alt="">
+          Manage
+        </a>
+        <a href="" class="nav-item">
+          <img src="/assets/icons/material-symbols/move_item.svg" alt="">
+          Leave
+        </a>
+      </div>
+    </div>
+
+    <div class="tab leaderboard-content">
+      <div class="tab-nav">
+        <button class="tab-nav-item w-50 active" id="tab-1">USD Balance</button>
+        <button class="tab-nav-item w-50" id="tab-2">DMH Balance</button>
+      </div>
+      <div class="tab-content">
+        <div id="tab-1-content" class="tab-content-item active">
+          <div class="card list list-fluid">
+            <a href="" class="list-item">
+              <div class="content-group">
+                <div class="rank">
+                  <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                </div>
+                <img src="/assets/imgs/avatar.webp" alt="">
+                <div class="content-group-item">
+                  <p>MR Daily</p>
+                </div>
+              </div>
+              <span class="arrow">
+                <img src="/assets/imgs/grade/grade-1-icon.png" alt="">
+              </span>
+            </a>
+            <a href="" class="list-item">
+              <div class="content-group">
+                <div class="rank">
+                  <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                </div>
+                <img src="/assets/imgs/avatar.webp" alt="">
+                <div class="content-group-item">
+                  <p>MR Daily</p>
+                </div>
+              </div>
+              <span class="arrow">
+                <img src="/assets/imgs/grade/grade-1-icon.png" alt="">
+              </span>
+            </a>
+            <a href="" class="list-item">
+              <div class="content-group">
+                <div class="rank">
+                  <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                </div>
+                <img src="/assets/imgs/avatar.webp" alt="">
+                <div class="content-group-item">
+                  <p>MR Daily</p>
+                </div>
+              </div>
+              <span class="arrow">
+                <img src="/assets/imgs/grade/grade-1-icon.png" alt="">
+              </span>
+            </a>
+            <a href="" class="list-item">
+              <div class="content-group">
+                <div class="rank">
+                  <span>4</span>
+                </div>
+                <img src="/assets/imgs/avatar.webp" alt="">
+                <div class="content-group-item">
+                  <p>MR Daily</p>
+                </div>
+              </div>
+              <span class="arrow">
+                <img src="/assets/imgs/grade/grade-1-icon.png" alt="">
+              </span>
+            </a>
+            <a href="" class="list-item">
+              <div class="content-group">
+                <div class="rank">
+                  <span>5</span>
+                </div>
+                <img src="/assets/imgs/avatar.webp" alt="">
+                <div class="content-group-item">
+                  <p>MR Daily</p>
+                </div>
+              </div>
+              <span class="arrow">
+                <img src="/assets/imgs/grade/grade-1-icon.png" alt="">
+              </span>
+            </a>
+            <a href="" class="list-item">
+              <div class="content-group">
+                <div class="rank">
+                  <span>6</span>
+                </div>
+                <img src="/assets/imgs/avatar.webp" alt="">
+                <div class="content-group-item">
+                  <p>MR Daily</p>
+                </div>
+              </div>
+              <span class="arrow">
+                <img src="/assets/imgs/grade/grade-1-icon.png" alt="">
+              </span>
+            </a>
+            <a href="" class="list-item">
+              <div class="content-group">
+                <div class="rank">
+                  <span>7</span>
+                </div>
+                <img src="/assets/imgs/avatar.webp" alt="">
+                <div class="content-group-item">
+                  <p>MR Daily</p>
+                </div>
+              </div>
+              <span class="arrow">
+                <img src="/assets/imgs/grade/grade-1-icon.png" alt="">
+              </span>
+            </a>
+            <a href="" class="list-item">
+              <div class="content-group">
+                <div class="rank">
+                  <span>8</span>
+                </div>
+                <img src="/assets/imgs/avatar.webp" alt="">
+                <div class="content-group-item">
+                  <p>MR Daily</p>
+                </div>
+              </div>
+              <span class="arrow">
+                <img src="/assets/imgs/grade/grade-1-icon.png" alt="">
+              </span>
+            </a>
+            <a href="" class="list-item">
+              <div class="content-group">
+                <div class="rank">
+                  <span>9</span>
+                </div>
+                <img src="/assets/imgs/avatar.webp" alt="">
+                <div class="content-group-item">
+                  <p>MR Daily</p>
+                </div>
+              </div>
+              <span class="arrow">
+                <img src="/assets/imgs/grade/grade-1-icon.png" alt="">
+              </span>
+            </a>
+
+          </div>
+        </div>
+
+        <div id="tab-2-content" class="tab-content-item">
+          <div class="card list list-fluid">
+            <a href="" class="list-item">
+              <div class="content-group">
+                <div class="rank">
+                  <img src="/assets/imgs/mine/mine-1st.png" alt="">
+                </div>
+                <img src="/assets/imgs/avatar.webp" alt="">
+                <div class="content-group-item">
+                  <p>MR Daily</p>
+                </div>
+              </div>
+              <span class="arrow">
+                <img src="/assets/imgs/grade/grade-1-icon.png" alt="">
+              </span>
+            </a>
+            <a href="" class="list-item">
+              <div class="content-group">
+                <div class="rank">
+                  <img src="/assets/imgs/mine/mine-2nd.png" alt="">
+                </div>
+                <img src="/assets/imgs/avatar.webp" alt="">
+                <div class="content-group-item">
+                  <p>MR Daily</p>
+                </div>
+              </div>
+              <span class="arrow">
+                <img src="/assets/imgs/grade/grade-1-icon.png" alt="">
+              </span>
+            </a>
+            <a href="" class="list-item">
+              <div class="content-group">
+                <div class="rank">
+                  <img src="/assets/imgs/mine/mine-3rd.png" alt="">
+                </div>
+                <img src="/assets/imgs/avatar.webp" alt="">
+                <div class="content-group-item">
+                  <p>MR Daily</p>
+                </div>
+              </div>
+              <span class="arrow">
+                <img src="/assets/imgs/grade/grade-1-icon.png" alt="">
+              </span>
+            </a>
+            <a href="" class="list-item">
+              <div class="content-group">
+                <div class="rank">
+                  <span>4</span>
+                </div>
+                <img src="/assets/imgs/avatar.webp" alt="">
+                <div class="content-group-item">
+                  <p>MR Daily</p>
+                </div>
+              </div>
+              <span class="arrow">
+                <img src="/assets/imgs/grade/grade-1-icon.png" alt="">
+              </span>
+            </a>
+            <a href="" class="list-item">
+              <div class="content-group">
+                <div class="rank">
+                  <span>5</span>
+                </div>
+                <img src="/assets/imgs/avatar.webp" alt="">
+                <div class="content-group-item">
+                  <p>MR Daily</p>
+                </div>
+              </div>
+              <span class="arrow">
+                <img src="/assets/imgs/grade/grade-1-icon.png" alt="">
+              </span>
+            </a>
+            <a href="" class="list-item">
+              <div class="content-group">
+                <div class="rank">
+                  <span>6</span>
+                </div>
+                <img src="/assets/imgs/avatar.webp" alt="">
+                <div class="content-group-item">
+                  <p>MR Daily</p>
+                </div>
+              </div>
+              <span class="arrow">
+                <img src="/assets/imgs/grade/grade-1-icon.png" alt="">
+              </span>
+            </a>
+            <a href="" class="list-item">
+              <div class="content-group">
+                <div class="rank">
+                  <span>7</span>
+                </div>
+                <img src="/assets/imgs/avatar.webp" alt="">
+                <div class="content-group-item">
+                  <p>MR Daily</p>
+                </div>
+              </div>
+              <span class="arrow">
+                <img src="/assets/imgs/grade/grade-1-icon.png" alt="">
+              </span>
+            </a>
+            <a href="" class="list-item">
+              <div class="content-group">
+                <div class="rank">
+                  <span>8</span>
+                </div>
+                <img src="/assets/imgs/avatar.webp" alt="">
+                <div class="content-group-item">
+                  <p>MR Daily</p>
+                </div>
+              </div>
+              <span class="arrow">
+                <img src="/assets/imgs/grade/grade-1-icon.png" alt="">
+              </span>
+            </a>
+            <a href="" class="list-item">
+              <div class="content-group">
+                <div class="rank">
+                  <span>9</span>
+                </div>
+                <img src="/assets/imgs/avatar.webp" alt="">
+                <div class="content-group-item">
+                  <p>MR Daily</p>
+                </div>
+              </div>
+              <span class="arrow">
+                <img src="/assets/imgs/grade/grade-1-icon.png" alt="">
+              </span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

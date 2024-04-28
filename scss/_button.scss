@@ -8,10 +8,13 @@ $btn-color-yellow: #F19C1B;
 $btn-border-color-yellow: linear-gradient($btn-color-yellow 0 0) padding-box,
 linear-gradient(to bottom, #FFE5A1, #FCD58B, #F2B252) border-box;
 
-
 $btn-color-black: #282828;
 $btn-border-color-black: linear-gradient($btn-color-black 0 0) padding-box,
 linear-gradient(to bottom, #656565, #454545) border-box;
+
+$btn-color-red: #D44728;
+$btn-border-color-red: linear-gradient($btn-color-red 0 0) padding-box,
+linear-gradient(to bottom, #FF937B, #F8785B, #F45936) border-box;
 
 
 .btn {
@@ -80,6 +83,10 @@ linear-gradient(to bottom, #656565, #454545) border-box;
 
   &-black {
     background: $btn-border-color-black;
+  }
+
+  &-red {
+    background: $btn-border-color-red;
   }
 
   &-disable {
