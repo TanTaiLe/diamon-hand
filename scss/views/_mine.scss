@@ -455,6 +455,9 @@
   &-score {
     margin-bottom: 24px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     &-info {
       a {
         padding: 6px 8px;
@@ -487,6 +490,10 @@
         color: #727272;
         line-height: 19px;
       }
+    }
+
+    &-gauge {
+
     }
   }
 
@@ -523,7 +530,6 @@
       }
     }
     .chart {
-      padding: 0 10px 0 16px;
       position: relative;
       &-indicator {
         position: absolute;
@@ -550,7 +556,6 @@
       canvas {
         width: 100% !important;
         height: 200px !important;
-        margin-right: -6px;
       }
     }
   }

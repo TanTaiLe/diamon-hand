@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foundation for Sites</title>
   <link rel="stylesheet" href="/css/app.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 
   <!-- <script type="module" src="/js/chart.js"></script> -->
   <script type="text/javascript">
@@ -35,7 +35,7 @@
           claimed DMH today</span>
       </div>
       <div class="activity-score-gauge">
-
+        <img src="/assets/imgs/logo-gauge-empty.png" alt="">
       </div>
     </div>
     <a href="/views/balance/activity-boost.html" class="btn btn-yellow">Boost activity</a>
@@ -123,41 +123,83 @@
       datasets: [{
         data: [10, 20, 30, 40, 50, 60, 70],
         backgroundColor: '#0CA9DA',
-        borderWidth: 1,
+        borderRadius: 8,
+        borderSkipped: false,
         barThickness: 12,
+        barPercentage: 1,
+        categoryPercentage: 0.15
       }]
     };
+
+    const backgroundBar = {
+      id: 'backgroundBar',
+      beforeDatasetsDraw(chart, args, pluginsOptions) {
+        const {
+          data,
+          ctx,
+          chartArea: {
+            top,
+            bottom,
+            left,
+            right,
+            width,
+            height
+          },
+          scales: {
+            x,
+            y
+          }
+        } = chart
+
+        ctx.save();
+        const segment = width / data.labels.length;
+        const barWidth = segment * data.datasets[0].barPercentage * data.datasets[0].categoryPercentage;
+
+        ctx.strokeStyle = '#C4DCE7';
+        ctx.lineJoin = 'round'
+        ctx.lineWidth = 1;
+        ctx.fillStyle = pluginsOptions.barColor;
+        for (let i = 0; i < data.labels.length; i++) {
+          ctx.fillRect(x.getPixelForValue(i) - barWidth / 2, top, barWidth, height);
+          ctx.roundRect(x.getPixelForValue(i) - barWidth / 2, top, barWidth, height, 8);
+          ctx.strokeRect(x.getPixelForValue(i) - barWidth / 2, top, barWidth, height)
+        }
+      }
+    }
+
+    function drawBorder(xPos, yPos, width, height, thickness = 1) {
+      ctx.fillStyle = '#000';
+      ctx.fillRect(xPos - (thickness), yPos - (thickness), width + (thickness * 2), height + (thickness * 2));
+    }
 
     const config = {
       type: 'bar',
       data: data,
       options: {
-        
-        legend: {
-          display: false
-        },
-        tooltips: {
-          enabled: false
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltips: {
+            enabled: false
+          },
+          backgroundBar: {
+            barColor: 'transparent'
+          }
         },
         scales: {
-          yAxes: [{
-            gridLines: {
-              display: false,
-              tickMarkLength: 0
-            },
-            ticks: {
-              beginAtZero: true,
-              max: 100,
-              display: false,
-            }
-          }],
-          xAxes: [{
-            gridLines: {
-              display: false,
-            },
-          }],
+          x: {
+            display: false,
+            stacked: true,
+          },
+          y: {
+            display: false,
+            stacked: true,
+            max: 100,
+          }
         },
       },
+      plugins: [backgroundBar]
     };
 
     const myChart = new Chart(ctx, config);
