@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foundation for Sites</title>
   <link rel="stylesheet" href="/css/app.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+  <!-- <script type="module" src="/js/chart.js"></script> -->
   <script type="text/javascript">
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
     let vh = window.innerHeight * 0.01;
@@ -24,8 +27,141 @@
 
 <body class="activity">
   <div class="scrollable">
-    
+    <div class="activity-score">
+      <div class="activity-score-info">
+        <a href="">ACTIVITY SCORE <img src="/assets/icons/material-symbols/info.svg" alt=""></a>
+        <h1>0</h1>
+        <span>0/1 Miners<br>
+          claimed DMH today</span>
+      </div>
+      <div class="activity-score-gauge">
+
+      </div>
+    </div>
+    <a href="/views/balance/activity-boost.html" class="btn btn-yellow">Boost activity</a>
+
+    <div class="activity-section">
+      <p>Activity streak <img src="/assets/icons/material-symbols/info.svg" alt=""></p>
+      <div class="activity-streak">
+        <div class="card weekdays">
+          <div class="weekdays-item">
+            <p>MON</p>
+            <img src="/assets/icons/material-symbols/cancel.svg" alt="">
+          </div>
+          <div class="weekdays-item">
+            <p>TUE</p>
+            <img src="/assets/icons/material-symbols/diamon_check.png" alt="">
+          </div>
+          <div class="weekdays-item">
+            <p>WED</p>
+            <img src="/assets/icons/material-symbols/radio_button_unchecked.svg" alt="">
+          </div>
+          <div class="weekdays-item">
+            <p>THU</p>
+            <img src="/assets/icons/material-symbols/radio_button_unchecked.svg" alt="">
+          </div>
+          <div class="weekdays-item">
+            <p>FRI</p>
+            <img src="/assets/icons/material-symbols/radio_button_unchecked.svg" alt="">
+          </div>
+          <div class="weekdays-item">
+            <p>SAT</p>
+            <img src="/assets/icons/material-symbols/radio_button_unchecked.svg" alt="">
+          </div>
+          <div class="weekdays-item">
+            <p>SUN</p>
+            <img src="/assets/icons/material-symbols/radio_button_unchecked.svg" alt="">
+          </div>
+        </div>
+        <div class="card chart">
+          <div class="chart-indicator">
+            <span>40%</span>
+          </div>
+          <canvas id="chart"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="activity-section activity-overview">
+      <p>Overview</p>
+      <div class="activity-overview">
+        <div class="card">
+          <img src="/assets/icons/material-symbols/diamon_check.png" alt="">
+          <div class="d-flex flex-column">
+            <h2>5.75</h2>
+            <span>DMH in Treasure</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/assets/icons/material-symbols/diamon_check.png" alt="">
+          <div class="d-flex flex-column">
+            <h2>+0.11/day</h2>
+            <span>Potential income</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/assets/icons/material-symbols/diamon_check.png" alt="">
+          <div class="d-flex flex-column">
+            <h2>0/7</h2>
+            <span>Active day</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/assets/icons/material-symbols/group.png" alt="">
+          <div class="d-flex flex-column">
+            <h2>20</h2>
+            <span>Miners</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <script type="text/javascript">
+    const ctx = document.getElementById('chart')
+
+    const data = {
+      labels: ['', '', '', '', '', '', ''],
+      datasets: [{
+        data: [10, 20, 30, 40, 50, 60, 70],
+        backgroundColor: '#0CA9DA',
+        borderWidth: 1,
+        barThickness: 12,
+      }]
+    };
+
+    const config = {
+      type: 'bar',
+      data: data,
+      options: {
+        
+        legend: {
+          display: false
+        },
+        tooltips: {
+          enabled: false
+        },
+        scales: {
+          yAxes: [{
+            gridLines: {
+              display: false,
+              tickMarkLength: 0
+            },
+            ticks: {
+              beginAtZero: true,
+              max: 100,
+              display: false,
+            }
+          }],
+          xAxes: [{
+            gridLines: {
+              display: false,
+            },
+          }],
+        },
+      },
+    };
+
+    const myChart = new Chart(ctx, config);
+  </script>
 </body>
 
 </html>
